@@ -1,0 +1,8 @@
+.contactSection {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 700px;
+  margin-bottom: 50px;
+  background-color: coral;
+  background-image: url(../assets/images/images-place/map-image-background.jpg);
+}

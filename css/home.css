@@ -1,0 +1,11 @@
+.home {
+  margin: 0 auto;
+  max-width: 1650px;
+  height: 900px;
+  margin-bottom: 50px;
+  background-color: peachpuff;
+  background-image: url(../assets/images/images-place/brooklyn-bridge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,13 @@
+.aboutSection {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 700px;
+  margin-bottom: 50px;
+  background-color: #a4152c;
+}
+.aboutSection .aboutHeader {
+  max-width: 100%;
+  height: 150px;
+  background-color: aquamarine;
+  @in background-image: url(../assets/images/images-place/crate-of-disks.jpg);
+}

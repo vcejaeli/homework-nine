@@ -1,0 +1,89 @@
+footer {
+    margin: 0 auto;
+    max-width: 1700px;
+    height: 240px;
+    color: #fff;
+    background-color: $logoBlue;
+
+    .footerContent {
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        // background-color: aqua;
+
+        .footerText {
+            padding-top: 32px;
+        }
+        .footerHours {
+            padding-top: 5px;
+
+            .socialMedia {
+                height: auto;
+                max-width: 150px;
+                display: flex;
+                justify-content: space-evenly;
+                // background-color: peachpuff;
+
+                .fa {
+                    // padding-top: 7px;
+                    font-size: 25px;
+                    height: 40px;
+                    width: 40px;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    //center icons within circle
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+                .fa:hover {
+                    opacity: 0.7;
+                }
+                .fa-facebook {
+                    background: #3B5998;
+                    color: white;
+                }
+                .fa-twitter {
+                    background: #55ACEE;
+                    color: white;
+                }
+                .fa-instagram {
+                    background: #8a3ab9;
+                    color: white;
+                }
+            }
+        }
+        .logoAndCopy {
+            height: 180px;
+            width: 470px;
+            justify-content: center;
+            align-items: center;
+            // background-color: rebeccapurple;
+
+            .footerLogo {
+                height: 140px;
+                width: 200px;
+                background-image: url(../assets/images/images-logo/hf-logo-white-outline-02.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                //this centers it above copyright
+                margin: 0 auto;
+                display: flex;
+            }
+            .footerCopyright {
+                margin: 0 auto;
+                padding-top: 8px;
+                padding-bottom: 5px;
+                max-width: 1200px;
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+    }
+}

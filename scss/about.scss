@@ -1,0 +1,167 @@
+.aboutSection {
+    margin: 0 auto;
+    max-width: 1650px;
+    min-height: 700px;
+    margin-bottom: 50px;
+    // background-color: #a4152c;
+
+    .aboutHeader {
+        margin: auto;
+        max-width: 100%;
+        height: 150px;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 40px;
+        @include backImgProperties;
+        background-image: linear-gradient(to right, $blackOverlay, $blackOverlayLight) ,url(../assets/images/images-place/crate-of-disks.jpg);
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 64px;
+            font-weight: normal;
+        }
+    }
+    //content below header
+    .aboutContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        .aboutContentImg {
+            flex-basis: 40%;
+            max-width: 100%;
+
+            height: 450px;
+            max-width: 400px;
+            background-color: antiquewhite;
+            @include backImgProperties;
+            background-image: url(../assets/images/images-place/fancy-store.jpg);
+        }
+        .aboutContentText {
+            font-size: 20px;
+            padding-left: 20px;
+            max-width: 500px;
+            line-height: 25px;
+
+            h1 {
+                color: $logoBlue;
+            }
+        }
+    }
+
+    //staff area
+    .aboutStaff {
+        margin-top: 40px;
+
+        .aboutStaffManager {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .aboutStaffManagerImg {
+                flex-basis: 40%;
+                max-width: 100%;
+
+                height: 350px;
+                max-width: 400px;
+                background-color: tomato;
+                @include backImgProperties;
+                background-image: url(../assets/images/images-staff/staff-manager.jpg);
+            }
+            .aboutStaffManagerText {
+                font-size: 20px;
+                padding-right: 20px;
+                max-width: 500px;
+                line-height: 25px;
+
+                h2 {
+                    color: $logoBlue;
+                }
+            }
+        }
+
+        .aboutStaffEmployee {
+            margin-top: 60px;
+            
+            h2 {
+                color: $logoBlue;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .aboutStaffEmployeeImgs {
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // background-color: tomato;
+                height: 400px;
+                max-width: 900px;
+                //creates space between imgs and employee names
+                margin-bottom: 40px;
+
+                .aboutStaffEmployeeImgs01 {
+                    height: 100%;
+                    width: 290px;
+                    @include backImgProperties;
+                    background-image: url(../assets/images/images-staff/staff-employee01.jpg);
+                    background-color: turquoise;
+                }
+                .aboutStaffEmployeeImgs02 {
+                    height: 100%;
+                    width: 290px;
+                    @include backImgProperties;
+                    background-image: url(../assets/images/images-staff/staff-employee02.jpg);
+                    background-color: turquoise;
+                }
+                .aboutStaffEmployeeImgs03 {
+                    height: 100%;
+                    width: 290px;
+                    @include backImgProperties;
+                    background-image: url(../assets/images/images-staff/staff-employee03.jpg);
+                    background-color: turquoise;
+                }
+            }
+
+            .aboutStaffEmployeeName {
+                height: 60px;
+                max-width: 900px;
+                margin: 0 auto;
+                // background-color: turquoise;
+
+                .employeeNames {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    h2 {
+                        color: $logoRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:750px) {
+    .aboutContent {
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .aboutContentImg {
+            padding-top: 400px;
+            margin-bottom: 20px;
+            min-height: 250px;
+            width: 100%;
+        }
+
+        h1 {
+            line-height: 45px;
+        }
+    }
+}

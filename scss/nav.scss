@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    //flex end pushes stuff to right
+    // justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin-bottom: -40px;
+    height: 230px;
+    // background-color: hotpink;
+
+    .logo {
+        height: 200px;
+        width: auto;
+        cursor: pointer;
+        //moves logo to left of screen
+        margin-right: auto;
+        transition: transform .7s ease-in-out;
+    }
+    .logo:hover {
+        transform: rotate(360deg);
+    }
+    .nav_links {
+        list-style: none;
+    }
+    .nav_links li {
+        //this makes it look nice
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+        color: $logoLightBlue;
+    }
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        color: #fff;
+        //spaces evenly between btn and nav
+        margin-left: 20px;
+    }
+    button:hover {
+        background-color: rgba(0,136,169,0.8);
+    }
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+}

@@ -1,0 +1,170 @@
+.contactSection {
+    margin: 0 auto;
+    max-width: 1650px;
+    min-height: 1000px;
+    margin-bottom: 50px;
+    @include backImgProperties;
+    background-image:linear-gradient(to right, $blackOverlay, $blackOverlayLight) ,url(../assets/images/images-place/manhattan-bridge.jpg);
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    // padding: 0;
+        
+    .contact-page {
+        width: 100%;
+        max-width: 1400px;
+        padding: 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+            margin-bottom: 80px;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 60px;
+            }
+
+            .contact-info, .contact-form {
+                flex: 1;
+            }
+            .item {
+                margin-bottom: 24px;
+                font-size: 16px;
+                // font-weight: bold;
+                color: #fff;
+            }
+            //icons 
+            .fas {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                background-color: $logoRed;
+                text-align: center;
+                color: #fff;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+            .contact-form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .textb {
+                width: calc(50% - 10px);
+                height: 50px;
+                padding: 12px;
+                background-color: #0b3f59b2;
+                border: none;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            textarea {
+                width: 100%;
+                min-height: 200px;
+                max-height: 400px;
+                resize: vertical;
+                padding: 12px;
+                background-color: #0b3f59b2;
+                border: none;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            .contact-btn {
+                width: 120px;
+                height: 40px;
+                margin-left: auto;
+                background-color: $logoRed;
+                border: none;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+                border: 2px solid $logoRed;
+                transition: .3s linear;
+            }
+            .contact-btn:hover {
+                background-color: transparent;
+                color: $logoRed;
+                border-radius: 20px;
+                outline: none;
+            }
+            .contact-btn:active {
+                background-color: $logoRed;
+            }
+        }
+}
+
+.contactBottom {
+    margin: 0 auto;
+    max-width: 1350px;
+    height: 900px;
+    margin-bottom: 50px;
+    background-color: peachpuff;
+    @include backImgProperties;
+    background-image: linear-gradient(to right, $blackOverlay, $blackOverlayLight) ,url(../assets/images/images-place/map-image.jpg);
+}
+
+//social Media
+.socialMedia {
+    height: auto;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    // background-color: peachpuff;
+
+    .fa {
+        // padding-top: 7px;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        //center icons within circle
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-instagram {
+        background: #8a3ab9;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .contactSection {
+        max-width: 880px;
+
+        .contact-page {
+            // background-color: cadetblue;
+    
+            h2 {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+            .contact-info, .contact-form {
+                flex: 100%;
+                margin-bottom: 30px;
+            }
+            .textb {
+                width: 100%;
+            }
+        }
+    }
+}

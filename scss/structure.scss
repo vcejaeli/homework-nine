@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+
+//scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    }
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #e6e6e6; 
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: rgb(155, 155, 155); 
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $logoLightBlue; 
+}
+
+//page highlight
+::selection {
+    color: #fff;
+    background: #ec960d;
+}
+//if needed
+// @font-face {
+
+// }
+
+//font used: Agency reg Agency bold
+//hex codes: 
+//  #0b3f59
+//  #de6464
+//  #00b7ff
+//  #ec960d
+//nice background color #a4152c
+
+//max-width of page: 1700px

@@ -1,0 +1,39 @@
+//home page squares that hold home illust. and text
+@mixin homeSquare($homeWidth: 250px, $homeHeight: 250px, $homeRadius: 10px, $homeShadow: 2px 10px 12px rgba(0,0,0,0.5), $homeBackground: $logoRed) {
+    width: $homeWidth;
+    height: $homeHeight;
+    border-radius: $homeRadius;
+    box-shadow: $homeShadow;
+    background-color: $homeBackground;
+}
+
+@mixin homeSquareText($homeTextWidth: 350px, $homeTextHeight: 260px, $homeTextRadius: 10px, $homeTextBackground: $logoBlue) {
+    width: $homeTextWidth;
+    height: $homeTextHeight;
+    border-radius: $homeTextRadius;
+    background-color: $homeTextBackground;
+}
+
+//background img properties
+@mixin backImgProperties($backImgPos: center, $backImgSize: cover, $backImgRep: no-repeat) {
+    background-position: $backImgPos;
+    background-size: $backImgSize;
+    background-repeat: $backImgRep;
+}
+
+//round button and button effects
+@mixin roundBtn($btnPadding: 9px 25px, $btnRadius: 50px, $btnBorder: none, $btnTrans: all 0.3s ease 0s, $btnCursor: pointer, $btnText: #fff, $btnColor: $logoLightBlue) {
+    padding: $btnPadding;
+    border-radius: $btnRadius;
+    border: $btnBorder;
+    transition: $btnTrans;
+    cursor: $btnCursor;
+    color: $btnText;
+    background-color: $btnColor;
+}
+@mixin roundBtnFx($btnFxRadius: 4px, $btnFxOutline: none, $btnFxColor: #2ae4e4) {
+    border-radius: $btnFxRadius;
+    outline: $btnFxOutline;
+    background-color: $btnFxColor;
+}
+

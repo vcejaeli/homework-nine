@@ -1,0 +1,126 @@
+.faqSection {
+    margin: 0 auto;
+    max-width: 1650px;
+    min-height: 700px;
+    margin-bottom: 50px;
+    // background-color: peachpuff;
+
+    .faqHeader {
+        margin: auto;
+        max-width: 100%;
+        height: 150px;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 40px;
+        @include backImgProperties;
+        background-image: linear-gradient(to right, $blackOverlay, $blackOverlayLight) ,url(../assets/images/images-place/stack-of-records.jpg);
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 64px;
+            font-weight: normal;
+        }
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        color: $logoBlue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: lowercase;
+    }
+
+    .faqMain {
+        margin: 0 auto;
+        max-width: 1650px;
+        min-height: 600px;
+        margin-bottom: 50px;
+        background-color: $logoBlue;
+        //moves questions to middle of space
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // .container {
+        //     width: 100%;
+        //     max-width: 80rem;
+        //     margin: 0 auto;
+        //     padding: 0 1.5rem;
+        // }
+
+        .accordion {
+            //tutorial start here
+            //size of question - area
+            max-width: 1300px;
+            // background-color: powderblue;
+
+            .accordion-item {
+                background-color: $logoRed;
+                border-radius: .6rem;
+                margin-bottom: 1rem;
+                padding: .4rem;
+                box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+            }
+            .accordion-link {
+                //sets size of question font
+                font-size: 1.1rem;
+                color: #fff;
+                text-decoration: none;
+                // background-color: salmon;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 0;
+            }
+            .accordion-link i {
+                //icon color
+                color: #fff;
+                padding: .5rem;
+            }
+            .accordion-link .fa-minus {
+                display: none;
+            }
+            .answer {
+                max-height: 0;
+                overflow: hidden;
+                position: relative;
+                background-color: #c55858;
+                //effect
+                transition: max-height 650ms;
+            }
+            .answer::before {
+                content: "";
+                position: absolute;
+                width: .6rem;
+                height: 90%;
+                background-color: $logoBlue;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            .answer p {
+                color: rgb(218, 218, 218);
+                //font size for answer paragraph
+                font-size: .9rem;
+                padding: 2rem;
+            }
+
+            //gives the effect
+            .accordion-item:target .answer {
+                max-height: 20rem;
+            }
+            //hides + icon
+            .accordion-item:target .accordion-link .fa-plus {
+                display: none;
+            }
+            //adds - icon 
+            .accordion-item:target .accordion-link .fa-minus {
+                display: block;
+            }
+        }
+    }
+}

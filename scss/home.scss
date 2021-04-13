@@ -1,0 +1,189 @@
+.home {
+    margin: 0 auto;
+    max-width: 1650px;
+    min-height: 700px;
+    margin-bottom: 50px;
+    background-color: peachpuff;
+    background-image: linear-gradient(to right, $blackOverlay, $blackOverlayLight) ,url(../assets/images/images-place/manhattan-bridge.jpg);
+    @include backImgProperties;
+    justify-content: center;
+    position: relative;
+
+    .squares {
+        max-width: 800px;
+        height: 350px;
+        // background-color: peachpuff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 20px;
+        margin: 0 auto;
+
+        .square {
+            @include homeSquare;
+            justify-content: center;
+            display: flex;
+        }
+        .illus {
+            height: 250px;
+            width: 250px;
+            background-color: #a74c4c;
+        }
+        .illus1 {
+            background-image: url(../assets/images/images-illustrations/buy-records-svg-01.svg);
+            @include backImgProperties;
+            // background-color: powderblue;
+            transition: 2s ease-in-out;
+        }
+        .illus2 {
+            background-image: url(../assets/images/images-illustrations/sell-records-svg-02.svg);
+            @include backImgProperties;
+            // background-color: purple;
+            transition: 2s ease-in-out;
+        }
+        .illus3 {
+            background-image: url(../assets/images/images-illustrations/quality-machines-svg-03.svg);
+            @include backImgProperties;
+            // background-color: royalblue;
+            transition: 2s ease-in-out;
+        }
+        .illus:hover {
+            background-color: $logoLightBlue;
+        }
+    }
+
+    .textArea {
+        min-height: 160px;
+        max-width: 800px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        // background-color: springgreen;
+
+        .textone {
+            min-height: 200px;
+            width: 33.3%;
+            // pushes text down 10px
+            padding: 10px;
+            background-color: #a74c4c;
+        }
+        .texttwo {
+            min-height: 200px;
+            width: 33.3%;
+            padding: 10px;
+            background-color: #8a3f3f;
+        }
+        .textthree {
+            min-height: 200px;
+            width: 33.3%;
+            padding: 10px;
+            background-color: #a74c4c;
+        }
+
+        h2 {
+            color: #fff;
+            text-transform: capitalize;
+        }
+        p {
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px;
+            text-transform: lowercase;
+        }
+    }
+
+    .homeBtn {
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        margin-top: 40px;
+
+        input {
+            @include roundBtn;
+            font-weight: bold;
+        }
+        input:hover {
+            @include roundBtnFx;
+            color: #000;
+        }
+    }
+
+    .search-area {
+        height: 100px;
+        max-width: 1650px;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        background-color: #de6464cb;
+
+        h3 {
+            padding-right: 200px;
+            padding-top: 15px;
+            font-size: .9rem;
+            color: #fff;
+        }
+        .searchbar {
+            // background-color: lightsalmon;
+            border-radius: 10px;
+            border: 1px solid rgba(0,136,169,1);
+            padding: 5px;
+            transition: .2s ease-in-out;
+        }
+        .searchbar:hover {
+            background-color: rgb(243, 243, 243);
+            border-radius: 1px;
+            outline: none;
+        }
+        // .searchbar:after {
+        //     outline: none;
+        // }
+        .fa-search {
+            color: #fff;
+            // background-color: blueviolet;
+            // padding: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width:750px) {
+
+    .squares {
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding-left: 110px;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .textArea {
+        flex-direction: column;
+        margin-top: 210px;
+        
+        .textone {
+            margin-top: -370px;
+        }
+    }
+}
+
+
+// @media only screen and (max-width: 1060px) {
+//     .promo-tours {
+//         width: 304px;
+//         flex-direction: column;
+//         padding-left: 0px;
+//         padding-right: 0px;
+//         // background-color: $site-blue;
+
+//         .promo {
+//             margin-bottom: 10px;
+//         }
+//     }
+// }

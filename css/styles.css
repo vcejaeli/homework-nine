@@ -1,0 +1,753 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e6e6e6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #9b9b9b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00b7ff;
+}
+
+::selection {
+  color: #fff;
+  background: #ec960d;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  margin-bottom: -40px;
+  height: 230px;
+}
+header .logo {
+  height: 200px;
+  width: auto;
+  cursor: pointer;
+  margin-right: auto;
+  transition: transform 0.7s ease-in-out;
+}
+header .logo:hover {
+  transform: rotate(360deg);
+}
+header .nav_links {
+  list-style: none;
+}
+header .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+header .nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+header .nav_links li a:hover {
+  color: #00b7ff;
+}
+header button {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  margin-left: 20px;
+}
+header button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1700px;
+  height: 240px;
+  color: #fff;
+  background-color: #0b3f59;
+}
+footer .footerContent {
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+footer .footerContent .footerText {
+  padding-top: 32px;
+}
+footer .footerContent .footerHours {
+  padding-top: 5px;
+}
+footer .footerContent .footerHours .socialMedia {
+  height: auto;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footerContent .footerHours .socialMedia .fa {
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+footer .footerContent .footerHours .socialMedia .fa:hover {
+  opacity: 0.7;
+}
+footer .footerContent .footerHours .socialMedia .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+footer .footerContent .footerHours .socialMedia .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+footer .footerContent .footerHours .socialMedia .fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+footer .footerContent .logoAndCopy {
+  height: 180px;
+  width: 470px;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerContent .logoAndCopy .footerLogo {
+  height: 140px;
+  width: 200px;
+  background-image: url(../assets/images/images-logo/hf-logo-white-outline-02.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+}
+footer .footerContent .logoAndCopy .footerCopyright {
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  max-width: 1200px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.home {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 700px;
+  margin-bottom: 50px;
+  background-color: peachpuff;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../assets/images/images-place/manhattan-bridge.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+}
+.home .squares {
+  max-width: 800px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 20px;
+  margin: 0 auto;
+}
+.home .squares .square {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
+  background-color: #de6464;
+  justify-content: center;
+  display: flex;
+}
+.home .squares .illus {
+  height: 250px;
+  width: 250px;
+  background-color: #a74c4c;
+}
+.home .squares .illus1 {
+  background-image: url(../assets/images/images-illustrations/buy-records-svg-01.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s ease-in-out;
+}
+.home .squares .illus2 {
+  background-image: url(../assets/images/images-illustrations/sell-records-svg-02.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s ease-in-out;
+}
+.home .squares .illus3 {
+  background-image: url(../assets/images/images-illustrations/quality-machines-svg-03.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s ease-in-out;
+}
+.home .squares .illus:hover {
+  background-color: #00b7ff;
+}
+.home .textArea {
+  min-height: 160px;
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.home .textArea .textone {
+  min-height: 200px;
+  width: 33.3%;
+  padding: 10px;
+  background-color: #a74c4c;
+}
+.home .textArea .texttwo {
+  min-height: 200px;
+  width: 33.3%;
+  padding: 10px;
+  background-color: #8a3f3f;
+}
+.home .textArea .textthree {
+  min-height: 200px;
+  width: 33.3%;
+  padding: 10px;
+  background-color: #a74c4c;
+}
+.home .textArea h2 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.home .textArea p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: lowercase;
+}
+.home .homeBtn {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+}
+.home .homeBtn input {
+  padding: 9px 25px;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: #fff;
+  background-color: #00b7ff;
+  font-weight: bold;
+}
+.home .homeBtn input:hover {
+  border-radius: 4px;
+  outline: none;
+  background-color: #2ae4e4;
+  color: #000;
+}
+.home .search-area {
+  height: 100px;
+  max-width: 1650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #de6464cb;
+}
+.home .search-area h3 {
+  padding-right: 200px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.home .search-area .searchbar {
+  border-radius: 10px;
+  border: 1px solid #0088a9;
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+}
+.home .search-area .searchbar:hover {
+  background-color: #f3f3f3;
+  border-radius: 1px;
+  outline: none;
+}
+.home .search-area .fa-search {
+  color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+  .squares {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-left: 110px;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .textArea {
+    flex-direction: column;
+    margin-top: 210px;
+  }
+  .textArea .textone {
+    margin-top: -370px;
+  }
+}
+.aboutSection {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 700px;
+  margin-bottom: 50px;
+}
+.aboutSection .aboutHeader {
+  margin: auto;
+  max-width: 100%;
+  height: 150px;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../assets/images/images-place/crate-of-disks.jpg);
+}
+.aboutSection .aboutHeader h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 64px;
+  font-weight: normal;
+}
+.aboutSection .aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.aboutSection .aboutContent .aboutContentImg {
+  flex-basis: 40%;
+  max-width: 100%;
+  height: 450px;
+  max-width: 400px;
+  background-color: antiquewhite;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/images-place/fancy-store.jpg);
+}
+.aboutSection .aboutContent .aboutContentText {
+  font-size: 20px;
+  padding-left: 20px;
+  max-width: 500px;
+  line-height: 25px;
+}
+.aboutSection .aboutContent .aboutContentText h1 {
+  color: #0b3f59;
+}
+.aboutSection .aboutStaff {
+  margin-top: 40px;
+}
+.aboutSection .aboutStaff .aboutStaffManager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutSection .aboutStaff .aboutStaffManager .aboutStaffManagerImg {
+  flex-basis: 40%;
+  max-width: 100%;
+  height: 350px;
+  max-width: 400px;
+  background-color: tomato;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/images-staff/staff-manager.jpg);
+}
+.aboutSection .aboutStaff .aboutStaffManager .aboutStaffManagerText {
+  font-size: 20px;
+  padding-right: 20px;
+  max-width: 500px;
+  line-height: 25px;
+}
+.aboutSection .aboutStaff .aboutStaffManager .aboutStaffManagerText h2 {
+  color: #0b3f59;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee {
+  margin-top: 60px;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee h2 {
+  color: #0b3f59;
+  display: flex;
+  justify-content: center;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeImgs {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeImgs .aboutStaffEmployeeImgs01 {
+  height: 100%;
+  width: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/images-staff/staff-employee01.jpg);
+  background-color: turquoise;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeImgs .aboutStaffEmployeeImgs02 {
+  height: 100%;
+  width: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/images-staff/staff-employee02.jpg);
+  background-color: turquoise;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeImgs .aboutStaffEmployeeImgs03 {
+  height: 100%;
+  width: 290px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/images-staff/staff-employee03.jpg);
+  background-color: turquoise;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeName {
+  height: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeName .employeeNames {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutSection .aboutStaff .aboutStaffEmployee .aboutStaffEmployeeName .employeeNames h2 {
+  color: #de6464;
+}
+
+@media only screen and (max-width: 750px) {
+  .aboutContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutContent .aboutContentImg {
+    padding-top: 400px;
+    margin-bottom: 20px;
+    min-height: 250px;
+    width: 100%;
+  }
+  .aboutContent h1 {
+    line-height: 45px;
+  }
+}
+.contactSection {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 1000px;
+  margin-bottom: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../assets/images/images-place/manhattan-bridge.jpg);
+  background-color: coral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.contactSection .contact-page {
+  width: 100%;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contactSection .contact-page h2 {
+  width: 100%;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+}
+.contactSection .contact-page .contact-info, .contactSection .contact-page .contact-form {
+  flex: 1;
+}
+.contactSection .contact-page .item {
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #fff;
+}
+.contactSection .contact-page .fas {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #de6464;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.contactSection .contact-page .contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactSection .contact-page .textb {
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  background-color: #0b3f59b2;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contactSection .contact-page textarea {
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #0b3f59b2;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contactSection .contact-page .contact-btn {
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #de6464;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #de6464;
+  transition: 0.3s linear;
+}
+.contactSection .contact-page .contact-btn:hover {
+  background-color: transparent;
+  color: #de6464;
+  border-radius: 20px;
+  outline: none;
+}
+.contactSection .contact-page .contact-btn:active {
+  background-color: #de6464;
+}
+
+.contactBottom {
+  margin: 0 auto;
+  max-width: 1350px;
+  height: 900px;
+  margin-bottom: 50px;
+  background-color: peachpuff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../assets/images/images-place/map-image.jpg);
+}
+
+.socialMedia {
+  height: auto;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.socialMedia .fa {
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.socialMedia .fa:hover {
+  opacity: 0.7;
+}
+.socialMedia .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.socialMedia .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.socialMedia .fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .contactSection {
+    max-width: 880px;
+  }
+  .contactSection .contact-page h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .contactSection .contact-page .contact-info, .contactSection .contact-page .contact-form {
+    flex: 100%;
+    margin-bottom: 30px;
+  }
+  .contactSection .contact-page .textb {
+    width: 100%;
+  }
+}
+.faqSection {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 700px;
+  margin-bottom: 50px;
+}
+.faqSection .faqHeader {
+  margin: auto;
+  max-width: 100%;
+  height: 150px;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../assets/images/images-place/stack-of-records.jpg);
+}
+.faqSection .faqHeader h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 64px;
+  font-weight: normal;
+}
+.faqSection h2 {
+  display: flex;
+  justify-content: center;
+  color: #0b3f59;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+}
+.faqSection .faqMain {
+  margin: 0 auto;
+  max-width: 1650px;
+  min-height: 600px;
+  margin-bottom: 50px;
+  background-color: #0b3f59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqSection .faqMain .accordion {
+  max-width: 1300px;
+}
+.faqSection .faqMain .accordion .accordion-item {
+  background-color: #de6464;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+.faqSection .faqMain .accordion .accordion-link {
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.faqSection .faqMain .accordion .accordion-link i {
+  color: #fff;
+  padding: 0.5rem;
+}
+.faqSection .faqMain .accordion .accordion-link .fa-minus {
+  display: none;
+}
+.faqSection .faqMain .accordion .answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #c55858;
+  transition: max-height 650ms;
+}
+.faqSection .faqMain .accordion .answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #0b3f59;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.faqSection .faqMain .accordion .answer p {
+  color: #dadada;
+  font-size: 0.9rem;
+  padding: 2rem;
+}
+.faqSection .faqMain .accordion .accordion-item:target .answer {
+  max-height: 20rem;
+}
+.faqSection .faqMain .accordion .accordion-item:target .accordion-link .fa-plus {
+  display: none;
+}
+.faqSection .faqMain .accordion .accordion-item:target .accordion-link .fa-minus {
+  display: block;
+}
